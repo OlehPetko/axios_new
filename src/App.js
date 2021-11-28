@@ -27,6 +27,7 @@ function App() {
             .then(res => console.log(res))
             .catch(error => console.log(error))
         getList()
+        setNewTask('')
     }
     const deleteCard =  async (id) => {
       await axios.delete(`https://nazarov-kanban-server.herokuapp.com/card/${id}`)
